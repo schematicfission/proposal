@@ -21,3 +21,24 @@ while the other didn’t? What if the person entering into Excel
 had typos that were corrupting various aggregation results? Suddenly,
 the team’s simple task of trying to merge and aggregate
 their data with some analysis tool becomes much more complicated.
+
+To deal with this, many analysts spend a significant amount writing
+various scripts to transform multiple data sources into one
+standard. This “data wrangling” often requires manual transformations
+of columns and rows, correcting individual values,
+and aggregating data from multiple sources with different layout.
+Fortunately, two applications were created to aid this process
+along: Stanford’s Data Wrangler and Google’s Open Refine.
+Although both projects have been developed with a similar goal
+of a visual and intuitive interface for data wrangling, they create
+a short-term but not scalable solution. Both Data Wrangler
+and Open Refine export their “wrangled” result as one massive
+CSV file. This is fine for small-scale individual tasks, but this
+does not scale in the way that the modern world demands that
+data scale. Our project will take this output CSV and transform
+it into a specifiably normalized SQL relational database. This
+transformation will allow the user all of the well-known benefits
+of a relational database management system, such as referential
+integrity, data consistency, and easier compatibility with analysis
+tools. Our project aims to provide data analysts with the ultimate
+tool for normalization of structured but unwrangled data.
